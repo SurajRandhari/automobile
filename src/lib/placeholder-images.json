@@ -1,0 +1,172 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-car",
+      "description": "Abstract background with car part schematics",
+      "imageUrl": "https://images.unsplash.com/photo-1533106418989-87423dec6922?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMGJsdWUlMjBjYXJ8ZW58MHx8fHwxNzU4ODgzODEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract blue"
+    },
+    {
+      "id": "engine-part",
+      "description": "Clean and inspected car engine",
+      "imageUrl": "https://images.unsplash.com/photo-1505635374747-431af16edaf2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjYXIlMjBlbmdpbmV8ZW58MHx8fHwxNzU4ODI1MjU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "car engine"
+    },
+    {
+      "id": "transmission-part",
+      "description": "Car transmission assembly",
+      "imageUrl": "https://images.unsplash.com/photo-1687039618665-9588be0d3fe4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYXIlMjB0cmFuc21pc3Npb258ZW58MHx8fHwxNzU4ODI1MjQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "car transmission"
+    },
+    {
+      "id": "engine-components",
+      "description": "Various small engine components like gears and pistons",
+      "imageUrl": "https://images.unsplash.com/photo-1609872209699-3e55dc7d90b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxlbmdpbmUlMjBjb21wb25lbnRzfGVufDB8fHx8MTc1ODgyNTI0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "engine components"
+    },
+    {
+      "id": "engine-bay-check",
+      "description": "Mechanic inspecting an engine bay",
+      "imageUrl": "https://images.unsplash.com/photo-1577801345759-f1f412165151?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtZWNoYW5pYyUyMGVuZ2luZXxlbnwwfHx8fDE3NTg4MjUyNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mechanic engine"
+    },
+    {
+      "id": "automotive-gears",
+      "description": "Close-up of automotive gears",
+      "imageUrl": "https://images.unsplash.com/photo-1665555068086-7d7cac444dcf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhdXRvbW90aXZlJTIwZ2VhcnN8ZW58MHx8fHwxNzU4ODI1MjQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "automotive gears"
+    },
+    {
+      "id": "engine-detail",
+      "description": "Detailed shot of a complex engine",
+      "imageUrl": "https://images.unsplash.com/photo-1692364490207-ce72f8204cc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZW5naW5lJTIwZGV0YWlsfGVufDB8fHx8MTc1ODgyNTI0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "engine detail"
+    },
+    {
+      "id": "testimonial-avatar-1",
+      "description": "Portrait of Sarah Johnson",
+      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODc1MTMyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "testimonial-avatar-2",
+      "description": "Portrait of Mike Rodriguez",
+      "imageUrl": "https://images.unsplash.com/photo-1636377985931-898218afd306?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg3MDg5NTd8MA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "testimonial-avatar-3",
+      "description": "Portrait of Jennifer Chen",
+      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODc1MTMyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "testimonial-avatar-4",
+      "description": "Portrait of David Thompson",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg3MDg5NTd8MA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "testimonial-avatar-5",
+      "description": "Portrait of Lisa Martinez",
+      "imageUrl": "https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODc1MTMyM3ww&ixlibrb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "testimonial-avatar-6",
+      "description": "Portrait of Robert Kim",
+      "imageUrl": "https://images.unsplash.com/photo-1522556189639-b150ed9c4330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg3MDg5NTd8MA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "contact-us",
+      "description": "Customer service representative helping a client",
+      "imageUrl": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjdXN0b21lciUyMHNlcnZpY2V8ZW58MHx8fHwxNzU4ODg0MzA0fDA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageHint": "customer service"
+    },
+    {
+      "id": "body-parts",
+      "description": "Car doors and fenders",
+      "imageUrl": "https://images.unsplash.com/photo-1544439199-1e0eebe49a6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXIlMjBib2R5fGVufDB8fHx8MTc1ODcyMjIwMXww&ixlibrb-4.1.0&q=80&w=1080",
+      "imageHint": "car body"
+    },
+    {
+      "id": "engine-parts",
+      "description": "Close up of an engine",
+      "imageUrl": "https://images.unsplash.com/photo-1505635374747-431af16edaf2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjYXIlMjBlbmdpbmV8ZW58MHx8fHwxNzU4ODI1MjU0fDA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageHint": "car engine"
+    },
+    {
+      "id": "suspension-parts",
+      "description": "Car suspension and shock absorber",
+      "imageUrl": "https://images.unsplash.com/photo-1729545321223-e597f91a25d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYXIlMjBzdXNwZW5zaW9ufGVufDB8fHx8MTc1ODgzMTUwNXww&ixlibrb-4.1.0&q=80&w=1080",
+      "imageHint": "car suspension"
+    },
+    {
+      "id": "transmission-parts-cat",
+      "description": "Close up of transmission gears",
+      "imageUrl": "https://images.unsplash.com/photo-1570224282208-8319d7252a99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cmFuc21pc3Npb24lMjBnZWFyc3xlbnwwfHx8fDE3NTg4MzE1MDZ8MA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageHint": "transmission gears"
+    },
+    {
+      "id": "lighting-parts",
+      "description": "Car headlights",
+      "imageUrl": "https://images.unsplash.com/photo-1713299612741-a7ce9115dfac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjYXIlMjBoZWFkbGlnaHRzfGVufDB8fHx8MTc1ODgzMTUwNXww&ixlibrb-4.1.0&q=80&w=1080",
+      "imageHint": "car headlights"
+    },
+    {
+      "id": "brake-parts",
+      "description": "Car brake disc and caliper",
+      "imageUrl": "https://images.unsplash.com/photo-1613214150384-14921ff659b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjYXIlMjBicmFrZXN8ZW58MHx8fHwxNzU4ODMxNTA1fDA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageHint": "car brakes"
+    },
+    {
+      "id": "exhaust-parts",
+      "description": "Car exhaust pipe",
+      "imageUrl": "https://images.unsplash.com/photo-1708389733862-e88af7b08a7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYXIlMjBleGhhdXN0fGVufDB8fHx8MTc1ODczMTk0Mnww&ixlibrb-4.1.0&q=80&w=1080",
+      "imageHint": "car exhaust"
+    },
+    {
+      "id": "wheel-parts",
+      "description": "Alloy wheels and tires",
+      "imageUrl": "https://images.unsplash.com/photo-1576572587475-6f7c0b6e49a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhbGxveSUyMHdoZWVsfGVufDB8fHx8MTc1ODc5NzA3NXww&ixlibrb-4.1.0&q=80&w=1080",
+      "imageHint": "alloy wheel"
+    },
+    {
+      "id": "bosch-logo",
+      "description": "Bosch logo",
+      "imageUrl": "https://images.unsplash.com/photo-1562783912-21ad31ee2a83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NTg3ODg0NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "denso-logo",
+      "description": "Denso logo",
+      "imageUrl": "https://images.unsplash.com/photo-1496200186974-4293800e2c20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NTg3ODg0NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "magna-logo",
+      "description": "Magna logo",
+      "imageUrl": "https://images.unsplash.com/photo-1622465911368-72162f8da3e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NTg3ODg0NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "zf-logo",
+      "description": "ZF logo",
+      "imageUrl": "https://images.unsplash.com/photo-1627843563095-f6e94676cfe0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29tcGFueSUyMGxvZ298ZW58MHx8fHwxNzU4Nzg4NDQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "aisin-logo",
+      "description": "Aisin logo",
+      "imageUrl": "https://images.unsplash.com/photo-1562783912-21ad31ee2a83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NTg3ODg0NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "valeo-logo",
+      "description": "Valeo logo",
+      "imageUrl": "https://images.unsplash.com/photo-1549924231-f129b911e442?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NTg3ODg0NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company logo"
+    }
+  ]
+}
