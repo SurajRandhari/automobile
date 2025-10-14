@@ -77,6 +77,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import { Label } from "@/components/ui/label";
 import HeroSectionDemo from "@/components/HeroSection";
+import AutoPopupDialog from "@/components/AutoPopupDialog";
 
 const heroImage = PlaceHolderImages.find((p) => p.id === "hero-car");
 
@@ -98,6 +99,7 @@ export default function Home() {
         <HappyCustomersSection />
         <GetQuoteSection />
         <CallToActionSection />
+        <AutoPopupDialog /> {/* <= HERE */}
       </main>
       <Footer />
     </div>
