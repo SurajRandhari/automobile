@@ -3,6 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 import { ThemeProvider } from '@/components/theme-provider';
+import { PhoneNumbersProvider } from '@/context/PhoneNumbersContext';
 
 export const metadata: Metadata = {
   title: 'Global Auto Connect',
@@ -23,23 +24,25 @@ export default function RootLayout({
       </head>
       <body className={cn('font-body antialiased')}>
         <div className="min-h-screen w-full relative">
-            <div
-                className="absolute inset-0 z-0"
-                style={{
-                background: "radial-gradient(125% 125% at 50% 10%, hsl(var(--background)) 40%, hsl(var(--primary) / 0.2) 100%)",
-                }}
-            />
-            <div className="relative z-10">
-                <ThemeProvider
-                attribute="class"
-                defaultTheme="system"
-                enableSystem
-                disableTransitionOnChange
-                >
+          <div
+            className="absolute inset-0 z-0"
+            style={{
+              background: "radial-gradient(125% 125% at 50% 10%, hsl(var(--background)) 40%, hsl(var(--primary) / 0.2) 100%)",
+            }}
+          />
+          <div className="relative z-10">
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+            >
+              <PhoneNumbersProvider>
                 {children}
-                <Toaster />
-                </ThemeProvider>
-            </div>
+              </PhoneNumbersProvider>
+              <Toaster />
+            </ThemeProvider>
+          </div>
         </div>
       </body>
     </html>
