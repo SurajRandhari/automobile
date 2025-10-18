@@ -78,6 +78,8 @@ import {
 import { Label } from "@/components/ui/label";
 import HeroSectionDemo from "@/components/HeroSection";
 import AutoPopupDialog from "@/components/AutoPopupDialog";
+import FindPartSection from "@/components/FindPartSection";
+import GetQuoteSection from "@/components/GetQuoteSection ";
 
 const heroImage = PlaceHolderImages.find((p) => p.id === "hero-car");
 
@@ -105,147 +107,6 @@ export default function Home() {
     </div>
   );
 }
-
-const FindPartSection = () => {
-  const [open, setOpen] = useState(false);
-  return (
-    <section
-      id="find-part"
-      className="py-16 md:py-14"
-      style={{
-        backgroundImage: `
-  radial-gradient(125% 125% at 50% 90%, #ffffff 40%, #3b82f6 100%)
-`,
-      }}
-    >
-      <div className="container max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="font-headline text-4xl font-semibold tracking-tight sm:text-4xl">
-            Find Your Perfect Part
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground md:text-lg">
-            Search our massive inventory for guaranteed compatibility.
-          </p>
-        </div>
-
-        <Card
-          className="p-6 md:py-8 md:px-10 rounded-xl shadow-2xl bg-card/50 backdrop-blur-sm border-primary/10"
-          style={{
-            background: "white"
-          }}
-        >
-          {/* flex container */}
-          <div className="flex flex-col md:flex-row gap-10 items-center">
-            {/* Left side: Image */}
-            <div className="w-full md:w-1/2 h-[500px] flex justify-center items-center">
-              <img
-                src="/images/find.jpg"
-                alt="Car Part"
-                className="rounded-lg shadow-lg w-full h-[100%] object-cover"
-              />
-            </div>
-            {/* Right side: Form */}
-            <CardContent className="w-full md:w-1/2 p-0">
-              <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  setOpen(true);
-                }}
-              >
-                <div className="grid grid-cols-1 gap-8">
-                  <div className="space-y-2">
-                    <Label htmlFor="brand">Select Brand</Label>
-                    <Select>
-                      <SelectTrigger id="brand">
-                        <SelectValue placeholder="e.g. Kia" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="kia">Kia</SelectItem>
-                        <SelectItem value="honda">Honda</SelectItem>
-                        <SelectItem value="bmw">BMW</SelectItem>
-                        <SelectItem value="ford">Ford</SelectItem>
-                        <SelectItem value="toyota">Toyota</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="model">Select Model</Label>
-                    <Select>
-                      <SelectTrigger id="model">
-                        <SelectValue placeholder="e.g. Sorento" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="accord">Accord</SelectItem>
-                        <SelectItem value="sorento">Sorento</SelectItem>
-                        <SelectItem value="x5">X5</SelectItem>
-                        <SelectItem value="f150">F-150</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="year">Select Year</Label>
-                    <Select>
-                      <SelectTrigger id="year">
-                        <SelectValue placeholder="e.g. 2023" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="2023">2023</SelectItem>
-                        <SelectItem value="2022">2022</SelectItem>
-                        <SelectItem value="2021">2021</SelectItem>
-                        <SelectItem value="2020">2020</SelectItem>
-                        <SelectItem value="2015">2015</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="part">Select Part</Label>
-                    <Select>
-                      <SelectTrigger id="part">
-                        <SelectValue placeholder="e.g. Engine" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="engine">Engine</SelectItem>
-                        <SelectItem value="transmission">
-                          Transmission
-                        </SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                </div>
-                <Button type="submit" className="mt-8 w-full" size="lg">
-                  <Search className="mr-2 h-4 w-4" /> Search Available Parts
-                </Button>
-              </form>
-            </CardContent>
-          </div>
-        </Card>
-
-        <AlertDialog open={open} onOpenChange={setOpen}>
-          <AlertDialogContent>
-            <AlertDialogHeader>
-              <AlertDialogTitle>Your part is available</AlertDialogTitle>
-              <AlertDialogDescription>
-                Your part is available, please contact us to finalize your
-                order.
-              </AlertDialogDescription>
-            </AlertDialogHeader>
-            <AlertDialogFooter className="sm:flex-col sm:space-y-2">
-              <Button asChild>
-                <a href="tel:+19794524280">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call +1 (979) 452-4280
-                </a>
-              </Button>
-              <Button variant="outline" onClick={() => setOpen(false)}>
-                Continue Searching
-              </Button>
-            </AlertDialogFooter>
-          </AlertDialogContent>
-        </AlertDialog>
-      </div>
-    </section>
-  );
-};
 
 
 const CompanyLogosSection = () => {
@@ -860,115 +721,115 @@ const HappyCustomersSection = () => {
   );
 };
 
-const GetQuoteSection = () => {
-  const contactImage = PlaceHolderImages.find((p) => p.id === "contact-us");
-  return (
-    <section
-      id="get-quote"
-      className="relative py-16 md:py-24 bg-gradient-to-b from-blue-50 to-primary/40 overflow-hidden"
-    >
-      {/* Curvy wave at top */}
-      <div className="absolute top-0 left-0 w-full overflow-hidden leading-none">
-        <svg
-          className="relative block w-full h-16"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          viewBox="0 0 1200 120"
-        >
-          <path
-            d="M321.39 56.09C212.09 68.86 106 116.91 0 120V0h1200v27.35c-82.87 26.4-177.16 45.93-267.7 38.21-96.8-8.24-186.24-52.59-284.26-59.28-111.19-7.36-219.44 32.21-326.65 49.81z"
-            className="fill-white"
-          ></path>
-        </svg>
-      </div>
+// const GetQuoteSection = () => {
+//   const contactImage = PlaceHolderImages.find((p) => p.id === "contact-us");
+//   return (
+//     <section
+//       id="get-quote"
+//       className="relative py-16 md:py-24 bg-gradient-to-b from-blue-50 to-primary/40 overflow-hidden"
+//     >
+//       {/* Curvy wave at top */}
+//       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none">
+//         <svg
+//           className="relative block w-full h-16"
+//           xmlns="http://www.w3.org/2000/svg"
+//           preserveAspectRatio="none"
+//           viewBox="0 0 1200 120"
+//         >
+//           <path
+//             d="M321.39 56.09C212.09 68.86 106 116.91 0 120V0h1200v27.35c-82.87 26.4-177.16 45.93-267.7 38.21-96.8-8.24-186.24-52.59-284.26-59.28-111.19-7.36-219.44 32.21-326.65 49.81z"
+//             className="fill-white"
+//           ></path>
+//         </svg>
+//       </div>
 
-      {/* Curvy wave at bottom */}
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none rotate-180">
-        <svg
-          className="relative block w-full h-16"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          viewBox="0 0 1200 120"
-        >
-          <path
-            d="M321.39 56.09C212.09 68.86 106 116.91 0 120V0h1200v27.35c-82.87 26.4-177.16 45.93-267.7 38.21-96.8-8.24-186.24-52.59-284.26-59.28-111.19-7.36-219.44 32.21-326.65 49.81z"
-            className="fill-white"
-          ></path>
-        </svg>
-      </div>
+//       {/* Curvy wave at bottom */}
+//       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none rotate-180">
+//         <svg
+//           className="relative block w-full h-16"
+//           xmlns="http://www.w3.org/2000/svg"
+//           preserveAspectRatio="none"
+//           viewBox="0 0 1200 120"
+//         >
+//           <path
+//             d="M321.39 56.09C212.09 68.86 106 116.91 0 120V0h1200v27.35c-82.87 26.4-177.16 45.93-267.7 38.21-96.8-8.24-186.24-52.59-284.26-59.28-111.19-7.36-219.44 32.21-326.65 49.81z"
+//             className="fill-white"
+//           ></path>
+//         </svg>
+//       </div>
 
-      <div className="container relative z-10 py-4">
-        <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-            Get Your Quote Today
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground md:text-lg">
-            Ready to save big on quality OEM parts? Contact our experts for a
-            personalized quote and let us help you find exactly what you need.
-          </p>
-        </div>
+//       <div className="container relative z-10 py-4">
+//         <div className="text-center mb-12">
+//           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
+//             Get Your Quote Today
+//           </h2>
+//           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground md:text-lg">
+//             Ready to save big on quality OEM parts? Contact our experts for a
+//             personalized quote and let us help you find exactly what you need.
+//           </p>
+//         </div>
 
-        <Card className="overflow-hidden lg:grid lg:grid-cols-2 lg:gap-0 shadow-2xl bg-card/50 backdrop-blur-sm border-primary/10">
-          <CardContent className="p-6 md:p-10 flex flex-col justify-center">
-            <h3 className="font-headline text-2xl font-bold mb-2">
-              Request a Quote
-            </h3>
-            <p className="text-muted-foreground mb-6">
-              We typically respond within 2 business hours.
-            </p>
-            <form className="space-y-4">
-              <div className="grid sm:grid-cols-2 gap-4">
-                <Input placeholder="Your Name *" required />
-                <Input type="email" placeholder="Your Email *" required />
-              </div>
-              <Input type="tel" placeholder="Your Phone" />
-              <Textarea
-                placeholder="Tell us about the part you need - include your vehicle year, make, model, and specific part requirements... *"
-                required
-                rows={5}
-              />
-              <Button type="submit" className="w-full" size="lg">
-                Send Quote Request
-              </Button>
-            </form>
-          </CardContent>
+//         <Card className="overflow-hidden lg:grid lg:grid-cols-2 lg:gap-0 shadow-2xl bg-card/50 backdrop-blur-sm border-primary/10">
+//           <CardContent className="p-6 md:p-10 flex flex-col justify-center">
+//             <h3 className="font-headline text-2xl font-bold mb-2">
+//               Request a Quote
+//             </h3>
+//             <p className="text-muted-foreground mb-6">
+//               We typically respond within 2 business hours.
+//             </p>
+//             <form className="space-y-4">
+//               <div className="grid sm:grid-cols-2 gap-4">
+//                 <Input placeholder="Your Name *" required />
+//                 <Input type="email" placeholder="Your Email *" required />
+//               </div>
+//               <Input type="tel" placeholder="Your Phone" />
+//               <Textarea
+//                 placeholder="Tell us about the part you need - include your vehicle year, make, model, and specific part requirements... *"
+//                 required
+//                 rows={5}
+//               />
+//               <Button type="submit" className="w-full" size="lg">
+//                 Send Quote Request
+//               </Button>
+//             </form>
+//           </CardContent>
 
-          <div className="relative min-h-[300px] lg:min-h-full">
-            {contactImage && (
-              <Image
-                src="/images/contact.png"
-                alt={contactImage.description}
-                fill
-                className="object-cover"
-                data-ai-hint={contactImage.imageHint}
-              />
-            )}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
-            <div className="absolute bottom-0 left-0 p-8 text-white">
-              <h3 className="font-headline text-2xl font-bold">
-                Contact Information
-              </h3>
-              <div className="mt-4 space-y-4 text-sm">
-                <div className="flex items-center">
-                  <Phone className="h-5 w-5 mr-3" />
-                  <span>+1 (979) 452-4280</span>
-                </div>
-                <div className="flex items-center">
-                  <Mail className="h-5 w-5 mr-3" />
-                  <span>info@connectglobalauto.site</span>
-                </div>
-                <div className="flex items-center">
-                  <Clock10 className="h-5 w-5 mr-3" />
-                  <span>Mon-Fri: 7AM-9PM EST</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Card>
-      </div>
-    </section>
-  );
-};
+//           <div className="relative min-h-[300px] lg:min-h-full">
+//             {contactImage && (
+//               <Image
+//                 src="/images/contact.png"
+//                 alt={contactImage.description}
+//                 fill
+//                 className="object-cover"
+//                 data-ai-hint={contactImage.imageHint}
+//               />
+//             )}
+//             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
+//             <div className="absolute bottom-0 left-0 p-8 text-white">
+//               <h3 className="font-headline text-2xl font-bold">
+//                 Contact Information
+//               </h3>
+//               <div className="mt-4 space-y-4 text-sm">
+//                 <div className="flex items-center">
+//                   <Phone className="h-5 w-5 mr-3" />
+//                   <span>+1 (979) 452-4280</span>
+//                 </div>
+//                 <div className="flex items-center">
+//                   <Mail className="h-5 w-5 mr-3" />
+//                   <span>info@connectglobalauto.site</span>
+//                 </div>
+//                 <div className="flex items-center">
+//                   <Clock10 className="h-5 w-5 mr-3" />
+//                   <span>Mon-Fri: 7AM-9PM EST</span>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//         </Card>
+//       </div>
+//     </section>
+//   );
+// };
 
 
 const CallToActionSection = () => {
